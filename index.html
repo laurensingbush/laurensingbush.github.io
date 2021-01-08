@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <title>Lauren Singbush</title>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="header-container nav-down">
+            <!-- NAVIGATION MENU -->
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li class="logo">
+                        <a href="#home" aria-label="home">
+                            <img src="assets/images/logo.png" class="logo-image">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link resume-btn" href="assets/resume.pdf" target="_blank">Resume</a>
+                    </li>
+                    <li class="navbar-toggle">
+                        <span class="navbar-toggle-bars top-bar"></span>
+                        <span class="navbar-toggle-bars middle-bar"></span>
+                        <span class="navbar-toggle-bars bottom-bar"></span>
+                    </li>
+
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- MAIN PAGE CONTENT -->
+        <main class="main-container">
+            <!-- Home Section-->
+            <section id="home" class="home-section">
+                <div class="home-container">
+                    <div class="main-home">
+                        <h1 class="home-header">
+                            Hi, I'm Lauren
+                        </h1>
+                        <p class="home-subheading">
+                            A Front-end Developer
+                        </p>
+                    </div>
+                    <div class="arrow-down">
+                        <i class="arrow-icon fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section-->
+            <section id="about" class="about-section">
+                <div class="about-container container">
+                    <div class=about-info-container>
+                        <h2 class="page-heading">About Me</h2>
+                        <p class="about-info-para">
+                            Hello! I'm Lauren, a front-end developer planning to move out to the West Coast.
+                        </p>
+                        <p class="about-info-para about-info-para-two">
+                            With a background in <abbr title="Human-Computer Interaction">HCI</abbr>, I soon found my passion for designing and developing products that would help people in their everyday lives. While creating, I always strive to provide accessible and readable code that meets the user's needs.    
+                        </p>
+                        <p class="about-info-para about-info-para-three">
+                            Here are a few technologies I've worked with:
+                        </p>
+                        <ul class="skills-list">
+                            <li class="skills-item"><abbr title="HyperText Markup Language">HTML5</abbr></li>
+                            <li class="skills-item"><abbr title="Cascading Style Sheets">CSS3</abbr></li>
+                            <li class="skills-item">JavaScript (ES6+)</li>
+                            <li class="skills-item">React</li>
+                            <li class="skills-item">Java</li>
+                            <li class="skills-item"><abbr title="Structured Query Language">SQL</abbr></li>
+                        </ul>
+                    </div>
+                    <div class="about-image-container">
+                        <img class="about-image" src="assets/images/aboutphoto.jpg" alt="photo of me">
+                        <div class="about-image-background"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="projects-section">
+                <div class="projects-container container">
+                    <div class="projects-heading">
+                        <h2 class="page-heading">Projects</h2>
+                    </div>
+                    <ul class="projects-list">
+                        <li class="project-item project-one">
+                            <article>
+                                <a href="https://bucketlist-trip-planner.netlify.app/" target="_blank">
+                                    <img class="project-image" src="assets/images/trip-planner.jpg" alt="trip planner screenshot">
+                                </a>
+                                <div class="project-info">
+                                    <h3 class="project-heading">Trip Planner</h3>
+                                    <p class="project-para">
+                                        An app for visualizing my bucket list trips with each destination including things to do 
+                                    </p>
+                                    <ul class="tools-list">
+                                        <li class="tools-item">React</li>
+                                        <li class="tools-item">React-Leaflet.js</li>
+                                        <li class="tools-item">Leaflet.js</li>
+                                    </ul>
+                        
+                                    <ul class="project-links-list">
+                                        <li class="project-links-item">
+                                            <a href="https://github.com/laurensingbush/Trip-planner" target="_blank"><i
+                                                    class="project-link fab fa-github" title="GitHub"></i></a>
+                                        </li>
+                                        <li class="project-links-item">
+                                            <a href="https://bucketlist-trip-planner.netlify.app/" target="_blank"><i
+                                                    class="project-link fas fa-external-link-alt" title="Live App"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="project-item project-two">
+                            <article>
+                                <a href="https://multiple-choice-quiz.netlify.app/" target="_blank">
+                                    <img class="project-image" src="assets/images/quiz.jpg" alt="multiple choice quiz screenshot">
+                                </a>
+                                <div class="project-info">
+                                    <h3 class="project-heading">Multiple Choice Quiz</h3>
+                                    <p class="project-para">
+                                        A quiz that fetches computer-based questions from a Trivia API
+                                    </p>
+                                    <ul class="tools-list">
+                                        <li class="tools-item"><abbr>HTML</abbr></li>
+                                        <li class="tools-item"><abbr>CSS</abbr></li>
+                                        <li class="tools-item">JavaScript</li>
+                                        <li class="tools-item">Trivia API</li>
+                                    </ul>
+                                    <ul class="project-links-list">
+                                        <li class="project-links-item">
+                                            <a href="https://github.com/laurensingbush/Multiple-Choice-Quiz-JavaScript" target="_blank"><i
+                                                    class="project-link fab fa-github" title="GitHub"></i></a>
+                                        </li>
+                                        <li class="project-links-item">
+                                            <a href="https://multiple-choice-quiz.netlify.app/" target="_blank"><i
+                                                    class="project-link fas fa-external-link-alt" title="Live App"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="project-item project-three">
+                            <article>
+                                <a href="https://track-ip-address.netlify.app/" target="_blank">
+                                    <img class="project-image" src="assets/images/ip-address-tracker.jpg" alt="ip address tracker screenshot">
+                                </a>
+                                <div class="project-info">
+                                    <h3 class="project-heading">IP Address Tracker</h3>
+                                    <p class="project-para">
+                                        A tracker that provides information on the location, timezone, and ISP of an IP address
+                                    </p>
+                                    <ul class="tools-list">
+                                        <li class="tools-item"><abbr>HTML</abbr></li>
+                                        <li class="tools-item"><abbr>CSS</abbr></li>
+                                        <li class="tools-item">JavaScript</li>
+                                        <li class="tools-item">Geolocation API</li>
+                                        <li class="tools-item">Leaflet.js</li>
+                                    </ul>
+                                    
+                                    <ul class="project-links-list">
+                                        <li class="project-links-item">
+                                            <a href="https://github.com/laurensingbush/ip-address-tracker" target="_blank"><i class="project-link fab fa-github" title="GitHub"></i></a>
+                                        </li>
+                                        <li class="project-links-item">
+                                            <a href="https://track-ip-address.netlify.app/" target="_blank"><i class="project-link fas fa-external-link-alt" title="Live App"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="project-item project-four">
+                            <article>
+                                <a href="https://javascript-snake-game.netlify.app/" target="_blank">
+                                    <img class="project-image" src="assets/images/snake-game.jpg" alt="snake game screenshot">
+                                </a>
+                                <div class="project-info">
+                                    <h3 class="project-heading">Snake Game</h3>
+                                    <p class="project-para">
+                                        The classic Snake game using JavaScript and <abbr>HTML5</abbr> Canvas
+                                    </p>
+                                    <ul class="tools-list">
+                                        <li class="tools-item"><abbr>HTML</abbr></li>
+                                        <li class="tools-item"><abbr>CSS</abbr></li>
+                                        <li class="tools-item">JavaScript</li>
+                                    </ul>
+                                    <ul class="project-links-list">
+                                        <li class="project-links-item">
+                                            <a href="https://github.com/laurensingbush/Snake-Game" target="_blank"><i class="project-link fab fa-github" title="GitHub"></i></a>
+                                        </li>
+                                        <li class="project-links-item">
+                                            <a href="https://javascript-snake-game.netlify.app/" target="_blank"><i class="project-link fas fa-external-link-alt" title="Live App"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+    
+            <!-- Contact Section -->
+            <section id="contact" class="contact-section">
+                <div class="contact-container container">
+                    <h2 class="page-heading">Get In Touch With Me!</h2>
+                    <p class="contact-para">
+                        Feel free to send a message about my resume, projects, or to simply say hello. I would love to hear from you! 
+                    </p>
+                    <a href="mailto:singbushlauren@gmail.com" target="_blank" class="contact-btn">
+                        <span>Email Me</span><i class="contact-link far fa-envelope" title="Email"></i>
+                    </a>
+                </div>
+
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer id="main-footer">
+            <div class="social-icon-bar">
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="https://www.linkedin.com/in/lauren-singbush/" target="_blank"><i class="social-icon fab fa-linkedin-in" title="LinkedIn"></i></a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://github.com/laurensingbush" target="_blank"><i class="social-icon fab fa-github" title="GitHub"></i></a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://www.instagram.com/laurensingbush/" target="_blank"><i class="social-icon fab fa-instagram" title="Instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <p class="footer-para">
+                    &copy; Copyright 2020 &nbsp;|&nbsp; Lauren Singbush
+                </p>
+
+            </div>
+        </footer>
+
+        <script src="js/navbar.js"></script>
+        <script src="js/height.js"></script>
+        
+    </body>
+</html>
