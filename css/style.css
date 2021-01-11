@@ -73,7 +73,7 @@ p {
   padding: 0.6rem;
 }
 
-/****** MOBILE MENU ******/
+/****** MOBILE NAV MENU ******/
 
 .nav-list {
   width: 100%;
@@ -154,6 +154,7 @@ p {
   font-size: 2rem;
   color: var(--main-pink);
 }
+
 .arrow-down {
   position: absolute;
   bottom: 10%;
@@ -180,6 +181,7 @@ p {
 .about-section {
   background-color: var(--main-white);
 }
+
 .about-container {
   display: flex;
   flex-direction: column;
@@ -192,9 +194,6 @@ p {
 
 .skills-list {
   column-count: 2;
-  /*column-gap: 40px;
-    max-width: 450px;*/
-  /*column-gap: 2.5rem;*/
   max-width: 28rem;
   color: var(--main-darkblue);
 }
@@ -229,6 +228,7 @@ p {
   background-color: var(--main-lightpink);
   z-index: -1;
 }
+
 .about-image {
   width: 220px;
   height: auto;
@@ -260,11 +260,13 @@ p {
   object-fit: cover;
   object-position: 50% 0;
 }
+
 .project-heading,
 .project-para {
   padding-bottom: 0.6rem;
   color: var(--main-darkblue);
 }
+
 .project-info {
   padding: 1.25rem 0.625rem 0.625rem 0.625rem;
   background-color: rgba(var(--pink-rgb), 0.2);
@@ -278,6 +280,7 @@ p {
   flex-wrap: wrap;
   margin-bottom: 1.25rem;
 }
+
 .tools-item {
   color: var(--main-darkblue);
   font-size: 0.8rem;
@@ -298,6 +301,7 @@ p {
 .project-links-item {
   margin-left: 0.6rem;
 }
+
 .project-link {
   color: var(--main-darkblue);
   font-size: 1.25rem;
@@ -308,6 +312,7 @@ p {
 .contact-section {
   background-color: var(--main-white);
 }
+
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -342,10 +347,15 @@ p {
   justify-content: center;
   padding-top: 0.6rem;
 }
+
 .social-icon {
   color: var(--main-darkblue);
   font-size: 1.25rem;
   padding: 1rem;
+}
+
+.social-icon-bar .after {
+  display: none;
 }
 
 .footer-content {
@@ -460,18 +470,24 @@ p {
     z-index: 10;
   }
   .social-icon {
-    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    position: relative;
+    top: 0;
+    transition: top ease 0.2s;
   }
-  .social-icon-bar::after {
-    content: 'singbushlauren@gmail.com';
+  .social-list li:last-child a > i {
+    margin-bottom: 1rem;
+  }
+  .social-icon-bar .after {
     font-size: 0.5rem;
     letter-spacing: 0.1rem;
     color: var(--main-darkblue);
     display: inline-block;
-    position: absolute;
     transform: rotate(-90deg);
+    position: absolute;
     left: -105%;
     bottom: -45%;
+    transition: bottom ease 0.2s;
   }
 }
 
@@ -514,7 +530,16 @@ p {
     transform: scaleX(1);
   }
 
-  .contact-btn:hover {
+  .contact-btn:hover,
+  .social-icon:hover,
+  .social-icon-bar > .after:hover {
     color: var(--main-pink);
+  }
+
+  .social-icon:hover {
+    top: -3px;
+  }
+  .social-icon-bar .after:hover {
+    bottom: -43%;
   }
 }

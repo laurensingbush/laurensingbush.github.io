@@ -1,9 +1,8 @@
-//const projects = document.querySelectorAll('.project-info');
 // make the project info containers equal height
 function setEqualHeight() {
     const projects = document.querySelectorAll('.project-info');
     let maxHeight = 0;
-
+    
     // remove previous heights from resize
     Array.from(projects).forEach(project => {
         project.style.height = "";
