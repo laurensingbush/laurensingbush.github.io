@@ -51,4 +51,4 @@ window.addEventListener('scroll', () => {
     // set lastScroll to current position
     lastScroll = scrollPosition;
 
-})
+});
