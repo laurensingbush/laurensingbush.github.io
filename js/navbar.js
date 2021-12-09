@@ -25,11 +25,10 @@ const mobileNav = () => {
 mobileNav();
 
 
-
 // hide header on scroll down, show header on scroll up
-var navbar = document.querySelector('.header-container');
-var navbarHeight = navbar.offsetHeight;
-var lastScroll = 0;
+let navbar = document.getElementsByTagName("header")[0];
+let navbarHeight = navbar.offsetHeight;
+let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
     const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;

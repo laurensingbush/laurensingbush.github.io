@@ -1,0 +1,78 @@
+footer {
+  padding: 1rem;
+  .social-icon-bar {
+    margin-top: 0.6rem;
+    @include desktop {
+      position: fixed;
+      bottom: 10%;
+      left: 5%;
+      transform: translateY(-50%);
+      z-index: 10;
+      .rotate {
+        transform: translate(-50%, -50%) rotate(-90deg);
+      }
+    }
+    ul {
+      @include flexbox($justify-content: center);
+      @include desktop {
+        display: block;
+        padding: 0;
+      }
+      li {
+        &:last-child a > i {
+          @include desktop {
+            margin-bottom: 1.5rem;
+          }
+          @include large-desktop {
+            margin-bottom: 3rem;
+          }
+        }
+        a > i {
+          color: $green;
+          font-size: 1.25rem;
+          margin: 0 1rem;
+          @include desktop {
+            padding: 1rem 0;
+            margin: 0;
+            position: relative;
+            top: 0;
+            transition: top ease 0.2s;
+            &:hover {
+              color: $light-red;
+              top: -3px;
+            }
+          }
+        }
+      }
+    }
+    .after {
+      display: none;
+      @include desktop {
+        font-size: 0.5rem;
+        letter-spacing: 0.1rem;
+        color: $green;
+        display: inline-block;
+        position: absolute;
+        bottom: -40%;
+        left: 45%;
+        transition: bottom ease 0.2s;
+        &:hover {
+          color: $light-red;
+          bottom: -37%;
+        }
+      }
+    }
+  }
+  .footer-content {
+    @include flexbox($justify-content: center, $align-items: center);
+    color: $green;
+    margin-top: 1.3rem;
+    @include desktop {
+      margin: 0;
+    }
+    p {
+      color: $green;
+      font-size: 0.9rem;
+    }
+  }
+}

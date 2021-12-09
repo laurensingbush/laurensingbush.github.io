@@ -1,0 +1,133 @@
+header {
+  width: 100%;
+  background-color: $light-green;
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  z-index: 5;
+  nav {
+    .nav-list {
+      @include flexbox(
+        $justify-content: space-between,
+        $align-items: center,
+        $flex-wrap: wrap
+      );
+      width: 100%;
+      background-color: $light-green;
+      padding-bottom: 1rem;
+      @include desktop {
+        padding: 0.8rem;
+      }
+      .logo,
+      .navbar-toggle {
+        padding: 1.25rem 1.875rem 0 1.25rem;
+      }
+      .logo {
+        @include desktop {
+          padding: 0;
+          margin-right: auto;
+          padding-left: 4%;
+        }
+        span {
+          font-family: $Lobster;
+          font-size: 2rem;
+          color: $light-red;
+        }
+      }
+      .nav-item {
+        width: 100%;
+        padding: 0.9rem 0.3rem;
+        text-align: center;
+        display: none;
+        order: 2;
+        @include desktop {
+          display: block;
+          width: auto;
+          margin-right: 1.25rem;
+          padding: 0;
+        }
+        &:nth-child(-n + 4) a {
+          position: relative;
+          &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            border: 1px solid $light-red;
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: all 0.5s ease-in-out 0s;
+          }
+          &:hover:after {
+            visibility: visible;
+            transform: scaleX(1);
+          }
+        }
+        .nav-link {
+          color: $green;
+          padding-bottom: 0.3rem;
+        }
+        .resume-btn {
+          color: $light-red;
+          border: 2px solid $light-red;
+          border-radius: 5px;
+          padding: 0.3rem 0.6rem;
+          &:hover {
+            background-color: $light-orange-hover;
+          }
+        }
+      }
+      .active {
+        display: block;
+      }
+      .navbar-toggle {
+        cursor: pointer;
+        order: 1;
+        @include desktop {
+          display: none;
+        }
+        .navbar-toggle-bars {
+          background-color: $green;
+          display: block;
+          height: 2px;
+          margin-bottom: 0.4rem;
+          transition: all 0.2s ease-in-out;
+          @include tablet {
+            height: 3px;
+          }
+        }
+        .top-bar,
+        .bottom-bar {
+          width: 25px;
+        }
+        .middle-bar {
+          width: 35px;
+        }
+      }
+      .toggle {
+        .top-bar {
+          transform: rotate(-45deg) translate(-8px, 6px);
+          @include tablet {
+            width: 30px;
+            transform: rotate(-45deg) translate(-8px, 6px);
+          }
+        }
+        .middle-bar {
+          opacity: 0;
+        }
+        .bottom-bar {
+          transform: rotate(45deg) translate(-6px, -4px);
+          @include tablet {
+            width: 30px;
+            transform: rotate(45deg) translate(-6px, -5px);
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav-up {
+  top: -60px;
+}

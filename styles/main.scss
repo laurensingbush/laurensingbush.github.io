@@ -1,0 +1,12 @@
+// Variables, mixins, resets, common styling
+@import './base';
+
+// Page sections
+@import './sections/home';
+@import './sections/about';
+@import './sections/projects';
+@import './sections/contact';
+
+// Components
+@import './components/header';
+@import './components/footer';

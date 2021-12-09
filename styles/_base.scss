@@ -1,0 +1,123 @@
+/* VARIABLES */
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+
+// Fonts
+$font-stack: 'Source Sans Pro', system, -apple-system, BlinkMacSystemFont,
+  Helvetica, sans-serif, Arial;
+$Rubik: 'Rubik', sans-serif;
+$Lobster: 'Lobster', cursive;
+
+// Colors
+$white: #ffffff;
+$mineral-green: #535f55;
+$lochinvar: #4b9681;
+$lochinvar-hover: rgba($lochinvar, 0.2);
+$cashmere: #f6ddc6;
+$cashmere-hover: rgba($cashmere, 0.6);
+$copperfield: #da8a67;
+$copperfield-light: rgba($copperfield, 0.4);
+
+$horizon: #d7e9e6;
+
+$light-orange: #f5d4c3;
+$light-orange-hover: rgba($light-orange, 0.4);
+$light-red: #e09789;
+$light-green: #c8dbd7;
+$light-blue: #e9f1ef;
+$tan: #f6efe7;
+$green: #3c5556;
+$boxshadow-color: rgba(0, 0, 0, 0.3);
+
+// Media Queries
+$tablet-width: 768px;
+$desktop-width: 992px;
+$large-desktop-width: 1400px;
+
+/* MIXINS */
+// Flexbox
+@mixin flexbox(
+  $flex-direction: false,
+  $flex-wrap: false,
+  $justify-content: false,
+  $align-items: false,
+  $flex: false
+) {
+  display: flex;
+  @if $flex-direction != false {
+    flex-direction: $flex-direction;
+  }
+  @if $flex-wrap != false {
+    flex-wrap: $flex-wrap;
+  }
+  @if $justify-content != false {
+    justify-content: $justify-content;
+  }
+  @if $align-items != false {
+    align-items: $align-items;
+  }
+  @if $flex != false {
+    flex: $flex;
+  }
+}
+
+// Media Queries
+@mixin tablet {
+  @media only screen and (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media only screen and (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+@mixin large-desktop {
+  @media only screen and (min-width: #{$large-desktop-width}) {
+    @content;
+  }
+}
+
+/* BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-family: $Rubik;
+  background-color: $light-green;
+}
+p {
+  line-height: 1.5rem;
+}
+
+h2 {
+  color: $green;
+  font-size: 1.6rem;
+  margin-bottom: 1.9rem;
+  padding-bottom: 0.2rem;
+  width: max-content;
+  border-bottom: 5px solid $tan;
+}
+.container {
+  padding: 3.75rem 1.875rem;
+  @include tablet {
+    padding: 3.75rem 3rem;
+  }
+  @include desktop {
+    padding: 5rem 1.9rem 5rem 8rem;
+  }
+  @include large-desktop {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+}
