@@ -2,7 +2,7 @@
 
 My personal portolio website is meant for showcasing my projects and providing a way for visitors to contact me with any questions or comments they may have.
 
-<img src="https://user-images.githubusercontent.com/43523243/145460176-81779ded-67ae-4378-9f25-6a2ce4a0df86.png" alt="home" width="800">
+<img src="https://user-images.githubusercontent.com/43523243/145693191-c3d91c36-b8fc-4798-b10e-fb4a58272436.png" alt="home" width="800">
 
 ---
 
