@@ -1,20 +1,26 @@
 #home {
-  @include flexbox(
-    $flex-direction: column,
-    $justify-content: center,
-    $align-items: center
-  );
-  height: 100vh;
-  position: relative;
   .home-container {
-    h1 {
-      color: $green;
-      font-size: 2.5rem;
-    }
-    p {
-      color: $light-red;
-      text-align: center;
-      margin-top: 0.7rem;
+    @include flexbox(
+      $flex-direction: column,
+      $justify-content: center,
+      $align-items: center
+    );
+    padding: 0;
+    height: 100vh;
+    position: relative;
+    .home-content {
+      h1 {
+        color: $dark-blue;
+        font-size: 3rem;
+        letter-spacing: 0.1rem;
+        font-weight: 900;
+      }
+      p {
+        color: $red;
+        text-align: center;
+        margin-top: 0.7rem;
+        font-size: 1.3rem;
+      }
     }
   }
   .arrow-down {
@@ -22,7 +28,7 @@
     bottom: 10%;
     animation: 3s bounce infinite;
     i {
-      color: $light-red;
+      color: $red;
       font-size: 2rem;
     }
   }

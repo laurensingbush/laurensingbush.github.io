@@ -1,5 +1,5 @@
 #about {
-  background-color: $white;
+  border-top: 2px solid $white;
   .about-container {
     @include flexbox($flex-direction: column);
     @include tablet {
@@ -14,7 +14,7 @@
         width: 50%;
       }
       p {
-        color: $green;
+        color: $dark-blue;
         padding-bottom: 1rem;
       }
       .skills-list {
@@ -23,13 +23,13 @@
         grid-auto-flow: column;
         column-gap: 1rem;
         max-width: 20rem;
-        color: $green;
+        color: $dark-blue;
         li {
           padding-bottom: 0.3rem;
           &:before {
             content: '\f105';
             font-family: 'FontAwesome';
-            color: $light-red;
+            color: $red;
             padding-right: 0.6rem;
           }
         }
@@ -50,7 +50,8 @@
         height: 89%;
         transform: translate(11%, 9%);
         border-radius: 5px;
-        background-color: $light-green;
+        background-color: $light-pink;
+        border: 1px solid $red;
         z-index: -1;
         box-shadow: 0 0 0.625rem $boxshadow-color;
       }
