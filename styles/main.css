@@ -30,7 +30,8 @@ h2 {
   width: max-content; }
 
 section {
-  background-color: #f9edf5; }
+  background-color: #f9edf5;
+  margin: 0 1rem; }
   @media only screen and (min-width: 768px) {
     section {
       margin: 0 3rem; } }
@@ -40,7 +41,7 @@ section {
 
 .container {
   background-color: #f9edf5;
-  padding: 3.75rem 1.875rem; }
+  padding: 3.75rem 1.5rem; }
   @media only screen and (min-width: 768px) {
     .container {
       padding: 3.75rem 2rem 3.75rem 2rem; } }
@@ -62,14 +63,20 @@ section {
   position: relative; }
   #home .home-container .home-content h1 {
     color: #123c69;
-    font-size: 3rem;
+    font-size: 2.5rem;
     letter-spacing: 0.1rem;
     font-weight: 900; }
+    @media only screen and (min-width: 768px) {
+      #home .home-container .home-content h1 {
+        font-size: 3rem; } }
   #home .home-container .home-content p {
     color: #ee4d64;
     text-align: center;
     margin-top: 0.7rem;
-    font-size: 1.3rem; }
+    font-size: 1.1rem; }
+    @media only screen and (min-width: 768px) {
+      #home .home-container .home-content p {
+        font-size: 1.3rem; } }
 
 #home .arrow-down {
   position: absolute;

@@ -11,15 +11,21 @@
     .home-content {
       h1 {
         color: $dark-blue;
-        font-size: 3rem;
+        font-size: 2.5rem;
         letter-spacing: 0.1rem;
         font-weight: 900;
+        @include tablet {
+          font-size: 3rem;
+        }
       }
       p {
         color: $red;
         text-align: center;
         margin-top: 0.7rem;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
+        @include tablet {
+          font-size: 1.3rem;
+        }
       }
     }
   }

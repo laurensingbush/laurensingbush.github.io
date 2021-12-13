@@ -95,6 +95,7 @@ h2 {
 }
 section {
   background-color: $light-pink;
+  margin: 0 1rem;
   @include tablet {
     margin: 0 3rem;
   }
@@ -104,7 +105,8 @@ section {
 }
 .container {
   background-color: $light-pink;
-  padding: 3.75rem 1.875rem;
+  //padding: 3.75rem 1.875rem;
+  padding: 3.75rem 1.5rem;
   @include tablet {
     padding: 3.75rem 2rem 3.75rem 2rem;
   }
