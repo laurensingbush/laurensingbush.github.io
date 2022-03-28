@@ -70,15 +70,6 @@ header {
           color: $dark-blue;
           padding-bottom: 0.3rem;
         }
-        .resume-btn {
-          color: $red;
-          border: 2px solid $red;
-          border-radius: 5px;
-          padding: 0.2em 0.6em 0.3em 0.6em;
-          &:hover {
-            background-color: $red-hover;
-          }
-        }
       }
       .active {
         display: block;
