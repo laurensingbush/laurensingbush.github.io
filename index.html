@@ -35,7 +35,7 @@
     <header class="nav-down">
       <!-- NAVIGATION MENU -->
       <nav>
-        <ul class="nav-list">
+        <ul role="list" class="nav-list">
           <li class="logo">
             <a href="#home" aria-label="home">
               <span>LS</span>
@@ -93,15 +93,20 @@
               experience.
             </p>
             <p>Here are a few technologies I've worked with:</p>
-            <ul class="skills-list">
-              <li><abbr title="HyperText Markup Language">HTML5</abbr></li>
-              <li><abbr title="Cascading Style Sheets">CSS3/Sass</abbr></li>
+            <ul role="list" class="skills-list">
+              <li>
+                <abbr title="HyperText Markup Language">HTML5</abbr>
+              </li>
+              <li>
+                <abbr title="Cascading Style Sheets">CSS3</abbr>
+                /CSS-in-JS/Tailwind
+              </li>
               <li>JavaScript (ES6+)</li>
               <li>TypeScript</li>
               <li>React</li>
+              <li>Remix</li>
               <li>Next.js</li>
               <li>Node.js</li>
-              <li>Express</li>
             </ul>
           </div>
           <div class="about-img">
@@ -116,7 +121,7 @@
         <div class="projects-container container">
           <h2>Projects</h2>
           <div class="main-projects">
-            <ul id="main-projects-list" class="main-projects-list">
+            <ul role="list" id="main-projects-list" class="main-projects-list">
               <!-- Full-Stack Projects -->
             </ul>
           </div>
