@@ -4,10 +4,13 @@
     .main-projects {
       .main-projects-list {
         @include flexbox($flex-direction: column, $align-items: center);
+        gap: 2rem;
+        @include tablet {
+          gap: 0;
+        }
         .project-item {
           border-radius: 5px;
           padding: 1rem;
-          margin-bottom: 2rem;
           background-color: rgba($light-pink, 0.3);
           box-shadow: 0 0 0.625rem $boxshadow-color;
           max-width: 50rem;
@@ -84,6 +87,15 @@
             }
             .project-technologies-list {
               margin-bottom: 0.8rem;
+            }
+          }
+
+          &:last-child {
+            @include tablet {
+              margin-bottom: 3rem;
+              @include desktop {
+                margin-bottom: 2rem;
+              }
             }
           }
         }
