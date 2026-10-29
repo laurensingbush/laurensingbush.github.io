@@ -1,9 +1,12 @@
 #about {
   border-top: 2px solid $white;
   .about-container {
-    @include flexbox($flex-direction: column);
+    @include flexbox($flex-direction: column, $align-items: center);
+    gap: 2.5rem;
+
     @include tablet {
-      @include flexbox($flex-direction: row);
+      @include flexbox($flex-direction: row, $align-items: center);
+      padding-right: 2rem;
     }
     .about-info {
       @include tablet {
@@ -26,8 +29,8 @@
         max-width: fit-content;
         color: $dark-blue;
         li:before {
-          content: '\f105';
-          font-family: 'FontAwesome';
+          content: "\f105";
+          font-family: "FontAwesome";
           color: $red;
           padding-right: 0.6rem;
         }
@@ -36,37 +39,28 @@
         }
       }
     }
-    .about-img {
+    .about-img-container {
       position: relative;
-      margin: 2.5rem auto 0 auto;
-      z-index: 1;
-      height: 250px;
-
+      display: inline-block;
+      margin: 0 auto;
+      img {
+        position: relative;
+        display: block;
+        height: 250px;
+        border-radius: 5px;
+      }
       &:before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
-        width: 90%;
-        height: 89%;
-        transform: translate(11%, 9%);
+        width: 100%;
+        height: 100%;
+        transform: translate(10px, 10px);
         border-radius: 5px;
         background-color: $light-pink;
         border: 1px solid $red;
-        z-index: -1;
         box-shadow: 0 0 0.625rem $boxshadow-color;
-      }
-      @include tablet {
-        margin: 2.5rem 0 0 3rem;
-      }
-      @include desktop {
-        margin: 2.5rem auto 0 auto;
-      }
-      img {
-        width: 220px;
-        height: auto;
-        border-radius: 5px;
-        transform: scale(0.9);
       }
     }
   }
