@@ -1,12 +1,13 @@
 {
   "name": "portfolio-website",
   "version": "1.0.0",
-  "description": "My personal portolio website is meant for showcasing my projects and providing a way for visitors to contact me with any questions or comments they may have.",
+  "description": "My personal portfolio website is meant for showcasing my projects and providing a way for visitors to contact me with any questions or comments they may have.",
   "main": "index.js",
   "scripts": {
+    "dev": "concurrently \"http-server --cors\"  \"npm run watch:css\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "css": "sass styles/main.scss styles/main.css",
-    "watch": "nodemon -e scss -x 'npm run css'"
+    "watch:css": "nodemon -e scss -x 'npm run css'"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,8 @@
   },
   "homepage": "https://github.com/laurensingbush/laurensingbush.github.io#readme",
   "devDependencies": {
+    "concurrently": "^10.0.6",
+    "http-server": "^14.1.1",
     "nodemon": "^3.0.1",
     "sass": "^1.64.2"
   }
